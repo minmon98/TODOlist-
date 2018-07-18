@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25621B8020FEEB2800BB36D9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621B7F20FEEB2800BB36D9 /* TableCell.swift */; };
+		25621B8320FEED5200BB36D9 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 25621B8120FEED5200BB36D9 /* checked.png */; };
+		25621B8420FEED5200BB36D9 /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = 25621B8220FEED5200BB36D9 /* done.png */; };
 		25A4D06520FEE0DB00C70013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4D06420FEE0DB00C70013 /* AppDelegate.swift */; };
 		25A4D06720FEE0DB00C70013 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4D06620FEE0DB00C70013 /* MainController.swift */; };
 		25A4D06A20FEE0DB00C70013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A4D06820FEE0DB00C70013 /* Main.storyboard */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25621B7F20FEEB2800BB36D9 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		25621B8120FEED5200BB36D9 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked.png; path = images/checked.png; sourceTree = "<group>"; };
+		25621B8220FEED5200BB36D9 /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = done.png; path = images/done.png; sourceTree = "<group>"; };
 		25A4D06120FEE0DB00C70013 /* TODOList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODOList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A4D06420FEE0DB00C70013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25A4D06620FEE0DB00C70013 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25621B7A20FEE91E00BB36D9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				25621B8120FEED5200BB36D9 /* checked.png */,
+				25621B8220FEED5200BB36D9 /* done.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		25A4D05820FEE0DB00C70013 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +114,7 @@
 		25A4D06320FEE0DB00C70013 /* TODOList */ = {
 			isa = PBXGroup;
 			children = (
+				25621B7A20FEE91E00BB36D9 /* images */,
 				25A4D06420FEE0DB00C70013 /* AppDelegate.swift */,
 				25A4D06620FEE0DB00C70013 /* MainController.swift */,
 				25A4D06820FEE0DB00C70013 /* Main.storyboard */,
@@ -106,6 +122,7 @@
 				25A4D07020FEE0DB00C70013 /* LaunchScreen.storyboard */,
 				25A4D07320FEE0DB00C70013 /* Info.plist */,
 				25A4D06B20FEE0DB00C70013 /* TODOList.xcdatamodeld */,
+				25621B7F20FEEB2800BB36D9 /* TableCell.swift */,
 			);
 			path = TODOList;
 			sourceTree = "<group>";
@@ -236,6 +253,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A4D07220FEE0DB00C70013 /* LaunchScreen.storyboard in Resources */,
+				25621B8420FEED5200BB36D9 /* done.png in Resources */,
+				25621B8320FEED5200BB36D9 /* checked.png in Resources */,
 				25A4D06F20FEE0DB00C70013 /* Assets.xcassets in Resources */,
 				25A4D06A20FEE0DB00C70013 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +283,7 @@
 			files = (
 				25A4D06D20FEE0DB00C70013 /* TODOList.xcdatamodeld in Sources */,
 				25A4D06720FEE0DB00C70013 /* MainController.swift in Sources */,
+				25621B8020FEEB2800BB36D9 /* TableCell.swift in Sources */,
 				25A4D06520FEE0DB00C70013 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +533,7 @@
 				25A4D08E20FEE0DC00C70013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25A4D08F20FEE0DC00C70013 /* Build configuration list for PBXNativeTarget "TODOListTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +542,7 @@
 				25A4D09120FEE0DC00C70013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25A4D09220FEE0DC00C70013 /* Build configuration list for PBXNativeTarget "TODOListUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +551,7 @@
 				25A4D09420FEE0DC00C70013 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

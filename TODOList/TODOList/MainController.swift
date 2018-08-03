@@ -15,7 +15,7 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let TODO = 0
     let DONE = 1
     let sections = ["TODO", "Done"]
-    let tasks = [
+    var tasks = [
         ["Task 1", "Task 2", "Task 3"],
         ["Task 4", "Task 5"]
     ]
@@ -27,8 +27,29 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: UI Events
-    
-    
+    @IBAction func btnAdd_Pressed(_ sender: Any) {
+        
+        let alert = UIAlertController.init(title: "New task", message: "Add new task", preferredStyle: .alert)
+        let saveAction = UIAlertAction.init(title: "Save", style: .default) {
+            UIAlertAction in
+            let task = alert.textFields?.first?.text
+            
+            self.tasks[self.TODO].append(task!)
+            
+            self.tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction.init(title: "Cancel", style: .default, handler: nil)
+        
+        alert.addTextField {
+            (textField: UITextField) -> Void in
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        self.present(alert, animated: true, completion: nil)
+    }    
     
     // MARK: UIViewController
     
@@ -65,6 +86,17 @@ class MainController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
 
-
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return indexPath.section == TODO
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete) {
+            tasks[TODO].remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.fade)
+        }
+    }
+    
 }
 

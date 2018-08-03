@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25189D1F2100DDB600576F71 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 25189D1E2100DDB600576F71 /* add.png */; };
 		25621B8020FEEB2800BB36D9 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25621B7F20FEEB2800BB36D9 /* TableCell.swift */; };
 		25621B8320FEED5200BB36D9 /* checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 25621B8120FEED5200BB36D9 /* checked.png */; };
 		25621B8420FEED5200BB36D9 /* done.png in Resources */ = {isa = PBXBuildFile; fileRef = 25621B8220FEED5200BB36D9 /* done.png */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25189D1E2100DDB600576F71 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = add.png; path = images/add.png; sourceTree = "<group>"; };
 		25621B7F20FEEB2800BB36D9 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 		25621B8120FEED5200BB36D9 /* checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checked.png; path = images/checked.png; sourceTree = "<group>"; };
 		25621B8220FEED5200BB36D9 /* done.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = done.png; path = images/done.png; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		25621B7A20FEE91E00BB36D9 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				25189D1E2100DDB600576F71 /* add.png */,
 				25621B8120FEED5200BB36D9 /* checked.png */,
 				25621B8220FEED5200BB36D9 /* done.png */,
 			);
@@ -255,6 +258,7 @@
 				25A4D07220FEE0DB00C70013 /* LaunchScreen.storyboard in Resources */,
 				25621B8420FEED5200BB36D9 /* done.png in Resources */,
 				25621B8320FEED5200BB36D9 /* checked.png in Resources */,
+				25189D1F2100DDB600576F71 /* add.png in Resources */,
 				25A4D06F20FEE0DB00C70013 /* Assets.xcassets in Resources */,
 				25A4D06A20FEE0DB00C70013 /* Main.storyboard in Resources */,
 			);
@@ -438,8 +442,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TODOList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Minhmon.TODOList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -451,8 +456,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TODOList/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Minhmon.TODOList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
